@@ -64,6 +64,16 @@
       <button class="btn_top">top</button>
       <button class="btn_down">down</button>
     </div>
+    <script>
+      $(".btn_top").click(function () {
+        $("html,body").animate({ scrollTop: 0 }, 700);
+        return false;
+      });
+      $(".btn_down").click(function () {
+        $("html,body").animate({ scrollTop: $(document).height() - 700 }, 700);
+        return false;
+      });
+    </script>
     <header class="hd">
       <div class="top_hd max_w">
         <a href="#">TIAMO COFFEE</a>
@@ -81,7 +91,7 @@
           <ul class="gnb">
             <li>
               <a href="#">카페띠아모</a>
-              <ul class="sub">
+              <ul class="sub sub1">
                 <li><a href="#">띠아모 소개</a></li>
                 <li><a href="#">브랜드컨셉</a></li>
                 <li><a href="#">띠아모만의 젤라또</a></li>
@@ -143,6 +153,10 @@
           </ul>
           <div class="btn_header">
             <a href="#">창업문의</a>
+          </div>
+          <div class="ham">
+            <button class="ham_open"><i class="fa-solid fa-bars"></i></button>
+            <button class="ham_close">닫기</button>
           </div>
         </div>
       </nav>
