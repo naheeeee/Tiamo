@@ -378,16 +378,17 @@
 }
 .sec1_circle .circle_3::after {
   content: "";
-  width: 20vw;
+  width: 17vw;
   height: 20vw;
   position: absolute;
   top: -47%;
-  left: 1.5rem;
+  left: 8%;
   background-image: url(./img/와플편집2.png);
   background-size: contain;
   background-repeat: no-repeat;
   transform: rotate(5deg);
   z-index: -1;
+  /* border: 1px solid red; */
 }
 
 .sec2 {
@@ -827,9 +828,9 @@
 .sec4 .store_size > li {
   width: calc(100% / 3);
   /* border: 5px solid tan; */
-  margin: 2rem 2rem;
+  margin: 1.5rem 0.75rem;
   position: relative;
-  padding-top: 40vh;
+  padding-top: 45vh;
   overflow: hidden;
 }
 .sec4 .list {
@@ -871,20 +872,26 @@
 .sec4 .list > p {
   /* border: 1px solid orange; */
   padding: 0 0.5rem;
+  white-space: nowrap;
 }
 .sec4 .list > p > span:first-of-type {
   cursor: pointer;
+  position: relative;
 }
 .sec4 .list > p > span:first-of-type::after {
   content: "";
   display: inline-block;
+  position: absolute;
   background-color: var(--main-bg1);
   width: 2px;
   height: 20px;
-  margin: 0 1rem;
+  margin: 0 0.3rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .sec4 .list > p > span:last-of-type {
   cursor: pointer;
+  padding-left: 0.5rem;
 }
 .sec4 > .btn {
   /* border: 1px solid salmon; */
@@ -945,7 +952,6 @@
   width: 25px;
   height: 35px;
   background-image: url(./img/location-dot-solid.svg);
-  color: var(--main-bg1);
   background-repeat: no-repeat;
   background-size: 80%;
   vertical-align: bottom;
@@ -1121,7 +1127,6 @@
 .foot_top .right a:nth-of-type(4) {
   background-image: url(./img/유튜브.png);
 }
-
 .foot_bottom {
   display: flex;
   padding: 1rem 0;
@@ -1146,15 +1151,13 @@
 }
 .foot_bottom .foot_number span {
 }
-
 .gotop {
   /* border: 1px solid salmon; */
   position: fixed;
-  bottom: 7vh;
+  bottom: 5vh;
   right: 5vh;
   z-index: 10;
 }
-
 .gotop > button {
   /* border: 1px solid salmon; */
   border: none;
@@ -1163,13 +1166,13 @@
   background-size: contain;
   display: block;
   background-color: transparent;
-  width: 3.5vw;
-  height: 3.5vw;
+  width: 3rem;
+  height: 3rem;
   cursor: pointer;
 }
 .btn_top {
   background-image: url(./img/caret-up-solid.svg);
-  margin-bottom: -2vh;
+  margin-bottom: -3vh;
 }
 .btn_down {
   background-image: url(./img/caret-down-solid.svg);
@@ -1319,8 +1322,20 @@
   .sec2::before {
     display: none;
   }
+  .sec3_left .menu_text > h2 {
+    font-size: 40px;
+  }
+  .sec3_left .menu_btns > * {
+    padding-left: 30%;
+  }
   .sec3 .sec3_left .menu_btns > button {
     font-size: 0.7rem;
+  }
+  .sec3_left .menu_btns > button::before {
+    width: 18%;
+  }
+  .sec3_left .menu_btns > button::after {
+    left: 18%;
   }
   .sec3_right > article .swiper {
     margin-top: 30%;
@@ -1345,8 +1360,12 @@
     left: 11.4%;
   }
   .sec4 .store_size > li {
-    margin: 3rem 1rem;
+    margin: 3rem 0.5rem;
     padding-top: 25vh;
+  }
+  .sec4 .store_size > li:first-of-type,
+  .sec4 .store_size > li:last-of-type {
+    margin: 3rem 0;
   }
   .hd .botton_hd .gnb::after {
     content: "";
@@ -1372,29 +1391,66 @@
   .sec4 > .btn > a {
     font-size: 0.8rem;
   }
-  .sec4 > .btn > a:first-of-type {
-    left: 33vw;
+  .sec5 h2 {
+    font-size: var(--M2) !important;
   }
-  .sec4 > .btn > a:last-of-type {
-    right: 33vw;
-  }
-  .sec5 form {
-    margin-top: 63%;
-  }
-  .sec5_openleft h2 {
-    /* white-space: nowrap; */
+  .sec5 .sec5_left,
+  .sec5 .sec5_right {
+    /* border: 1px solid red; */
+    text-align: center;
   }
   .sec5 .sec5_left img {
-    top: 30%;
-    right: 17%;
-    width: 24vh;
+    display: none;
+  }
+  .sec5 .sec5_text h2 {
+    margin-bottom: 5rem;
+  }
+  .sec5 .sec5_text span {
+    display: none;
+  }
+  .sec5 form {
+    margin-top: 10%;
+  }
+  .sec5 form input {
+    font-size: var(--S2);
+  }
+  .sec5 .sec5_right {
+    /* border: 1px solid red; */
+  }
+  .sec5_openleft {
+    width: 100%;
+  }
+  .sec5_openleft h2 {
+    margin-bottom: 2rem;
+  }
+  .sec5_openleft .open {
+    /* border: 1px solid salmon; */
+    width: 90%;
+    margin: 0.5rem;
   }
   .sec5_openleft .open span {
     font-size: 0.8rem;
   }
   .sec5_rightimg {
-    width: 18vw;
-    padding-top: 45vh;
+    display: none;
+  }
+  .foot_top .left a {
+    font-size: 12px;
+    padding: 0 0.5rem;
+  }
+  .foot_top .left a img {
+    width: 4rem;
+  }
+  .foot_top .right a {
+    /* border: 1px solid salmon; */
+    margin: 0.3rem 0.1rem;
+  }
+  .foot_bottom .foot_copy {
+    margin-right: 5%;
+  }
+  .gotop {
+    bottom: 3vh;
+    right: 3vh;
   }
 }
 @media (max-width: 650px) {
