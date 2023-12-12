@@ -234,6 +234,7 @@
   position: relative;
   width: 100%;
   padding-top: 44%;
+  padding-top: 82.5vh;
 }
 .sec1_text {
   position: absolute;
@@ -1277,6 +1278,10 @@
   .hd .bottom_hd .gnb:hover .sub {
     height: auto;
   }
+  .sec1_con {
+    /* border: 3px solid lightblue; */
+    /* padding-top: 60%; */
+  }
   .sec1_text h2 {
     font-size: var(--M2);
     padding-bottom: 0.25rem;
@@ -1286,16 +1291,36 @@
     white-space: nowrap;
   }
   .sec1_circle a {
-    font-size: 18px;
+    font-size: 1rem;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  .sec1_circle .circle_1 {
+    /* border: 5px solid salmon; */
+    top: 8%;
+    width: 25vw;
+    height: 25vw;
+  }
+  .sec1_circle .circle_1:hover {
+    top: 8%;
   }
   .sec1_circle .circle_2 {
     bottom: 5%;
-    left: 10%;
-    width: 12vw;
-    height: 12vw;
+    left: 15%;
+    width: 20vw;
+    height: 20vw;
   }
-  .sec1_circle .circle_2 a {
-    font-size: 14px;
+  .sec1_circle .circle_2:hover {
+    bottom: 5%;
+  }
+  .sec1_circle .circle_3 {
+    top: 35%;
+    right: 6%;
+    width: 20vw;
+    height: 20vw;
+  }
+  .sec1_circle .circle_3:hover {
+    top: 35%;
   }
   .sec2 .sec2_left {
     padding-right: 2rem;
