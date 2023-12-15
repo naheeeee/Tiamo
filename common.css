@@ -1639,7 +1639,7 @@
   }
   .sec5 {
     flex-direction: column-reverse;
-    padding: 5rem 0;
+    padding: 1.5rem 0 3rem 0;
   }
   .sec5 .sec5_left {
     width: 100%;
@@ -1656,18 +1656,18 @@
     transform: translateX(50%);
   }
   .sec5 .sec5_text h2 {
-    padding-top: 3rem;
-    margin-bottom: 0.3rem;
+    padding-top: 2rem;
+    margin-bottom: 0;
   }
   .sec5 .sec5_right {
     width: 100%;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
   .sec5_openleft h2 {
     padding-top: 2rem;
   }
   .sec5_openleft .open {
-    margin: 1rem 0 0 0;
+    margin: 0.5rem 0 0 0;
   }
   .sec5_openleft .open:first-of-type {
     margin: 0;
