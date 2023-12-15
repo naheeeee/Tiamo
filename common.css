@@ -447,6 +447,7 @@
 .sec2 .sec2_box3,
 .sec2 .sec2_box4 {
   background-size: cover;
+  background-position: center;
 }
 .sec2 .sec2_box1 {
   background-image: url(./img/He.jpg);
