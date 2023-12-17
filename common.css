@@ -1824,11 +1824,11 @@
   .foot_top .right {
     /* border: 1px solid salmon; */
     position: absolute;
-    top: 110%;
+    top: 120%;
     left: 50%;
     transform: translateX(-50%);
   }
   .foot_bottom {
-    padding: 2rem 0 1rem 0;
+    padding: 2.25rem 0 1rem 0;
   }
 }
