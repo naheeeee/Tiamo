@@ -547,7 +547,7 @@
   margin: 4rem 0;
 }
 .sec3_left .menu_btns > * {
-  /* border: 3px solid brown; */
+  border: 3px solid brown;
   border: none;
   background: transparent;
   font-size: 1.15rem;
@@ -640,8 +640,9 @@
   bottom: 0;
 }
 .sec3_right .swiper-slide > img {
-  width: 100%;
+  width: calc(100% - 1rem);
   filter: grayscale(1);
+  height: 100%;
 }
 .swiper .menu_list li {
   /* border: 3px solid pink; */
@@ -659,7 +660,8 @@
 }
 .swiper .swiper-slide-active {
   /* border: 1px solid red; */
-  width: 30vw !important;
+  /* width: 30vw !important; */
+  width: 50% !important;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -670,7 +672,7 @@
 .sec3_right .swiper-slide-active img {
   filter: grayscale(0) !important;
   /* border: 5px solid hotpink; */
-  width: 100%;
+  width: calc(100% - 1rem);
   background-size: contain;
 }
 .swiper .swiper-slide a {
@@ -715,7 +717,7 @@
   /* border: 3px solid lightblue; */
   position: absolute;
   bottom: 16.3vh;
-  left: 4.5%;
+  left: 6.3%;
   width: 40%;
   height: 6.2%;
   z-index: 100;
@@ -1164,6 +1166,40 @@
 .btn_down {
   background-image: url(./img/caret-down-solid.svg);
 }
+@media (max-width: 1000px) {
+  .sec3_left .menu_text > h2 {
+    font-size: 40px;
+  }
+  .sec3_left .menu_btns > * {
+    padding-left: 30%;
+  }
+  .sec3 .sec3_left .menu_btns > button {
+    font-size: 0.75rem;
+  }
+  .sec3_left .menu_btns > button::before {
+    width: 18%;
+  }
+  .sec3_left .menu_btns > button::after {
+    left: 18%;
+  }
+  .swiper .swiper-slide-active {
+    width: 75% !important;
+  }
+  .swiper li span {
+    font-size: var(--S1);
+    height: auto;
+    padding: 0.25rem 0;
+  }
+  .btns {
+    bottom: 16vh;
+    width: 65%;
+    left: 6.7%;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 7%;
+  }
+}
 @media (max-width: 900px) {
   .hd .btn_header {
     /* border: 3px solid lightblue; */
@@ -1332,43 +1368,6 @@
   }
   .sec2::before {
     display: none;
-  }
-  .sec3_left .menu_text > h2 {
-    font-size: 40px;
-  }
-  .sec3_left .menu_btns > * {
-    padding-left: 30%;
-  }
-  .sec3 .sec3_left .menu_btns > button {
-    font-size: 0.7rem;
-  }
-  .sec3_left .menu_btns > button::before {
-    width: 18%;
-  }
-  .sec3_left .menu_btns > button::after {
-    left: 18%;
-  }
-  .sec3_right > article .swiper {
-    margin-top: 30%;
-  }
-  .slide1 li::before {
-    height: 19vw;
-  }
-  .slide2 li::before {
-    height: 16.2vw;
-  }
-  .slide3 li::before {
-    height: 17.3vw;
-  }
-  .slide4 li::before {
-    height: 16.2vw;
-  }
-  .swiper li span {
-    font-size: 0.8rem;
-    left: 55%;
-  }
-  .btns {
-    left: 11.4%;
   }
   .sec4 .store_size > li {
     margin: 3rem 0.5rem;
@@ -1563,6 +1562,34 @@
   .sec2 .sec2_text p {
     font-size: var(--S2);
   }
+  .sec3::before {
+    right: 5%;
+    width: 7rem;
+    height: 7rem;
+  }
+  .sec3_left {
+    width: 45%;
+  }
+  .sec3_left .menu_btns > * {
+    padding-left: 25%;
+  }
+  .sec3_left .menu_btns > button::before {
+    width: 16%;
+  }
+  .sec3_left .menu_btns > button::after {
+    left: 16%;
+  }
+  .sec3_right {
+    width: 55%;
+  }
+  .swiper .swiper-slide-active {
+    width: calc(100% - 1rem) !important;
+    height: 75vw;
+  }
+  .btns {
+    left: 10%;
+    width: 79%;
+  }
   .sec4_text h2 {
     padding-top: 1.75rem;
     font-size: var(--M2);
@@ -1719,7 +1746,7 @@
   .sec1_circle .circle_1 img,
   .sec1_circle .circle_2 img,
   .sec1_circle .circle_3 img {
-    border: 5px solid lightpink;
+    /* border: 5px solid lightpink; */
     border-radius: 25%;
     transform: scale(1.5);
   }
@@ -1738,6 +1765,55 @@
   .sec2_img > li {
     width: calc(100% / 2 - 0.25rem);
     margin-bottom: 0.5rem;
+  }
+  .sec3_left {
+    width: 40%;
+  }
+  .sec3_left .menu_text > h2 {
+    font-size: 35px;
+  }
+  .sec3_left .menu_btns {
+    align-items: center;
+  }
+  .sec3_left .menu_btns > * {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .sec3 .sec3_left .menu_btns > button {
+    font-size: 0.65rem;
+  }
+  .sec3_left .menu_btns > button::before,
+  .sec3_left .menu_btns > button::after {
+    display: none;
+  }
+  .sec3_right {
+    width: 60%;
+  }
+  .sec3_right > article {
+    padding-bottom: 250px;
+  }
+  .swiper .swiper-slide-active {
+    /* border: 1px solid salmon; */
+    width: 100% !important;
+    padding-left: 0.5rem !important;
+    height: 75vw;
+  }
+  .swiper li::before {
+    display: none;
+  }
+  .swiper li span {
+    border: 0px;
+    border-top: 1px solid var(--point-c1);
+    font-size: var(--S1);
+    width: 91%;
+    transform: translateX(-50%);
+    padding-top: 0.5rem;
+  }
+  .btns {
+    bottom: 53vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
   }
   .sec4 .list > p {
     font-size: 0.75rem;
